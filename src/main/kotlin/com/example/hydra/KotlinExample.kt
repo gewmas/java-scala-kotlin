@@ -2,6 +2,7 @@ package com.example.hydra
 
 import com.example.hydra.dto.JavaPerson
 import com.example.hydra.dto.KotlinPerson
+import com.example.hydra.dto.ScalaPerson
 
 fun demo(source: List<Int>): List<Int> {
     val list = ArrayList<Int>()
@@ -21,6 +22,7 @@ fun main(args: Array<String>) {
     println("Hello World!")
     println(demo(listOf(1,2,3)))
 
+    println(ScalaPerson("Yuhua", "Mai", 28))
     println(KotlinPerson("Yuhua", "Mai", 28))
     println(JavaPerson("Yuhua", 23))
 }
