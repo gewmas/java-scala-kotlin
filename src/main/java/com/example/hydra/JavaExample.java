@@ -17,5 +17,7 @@ public class JavaExample {
 
         ScalaPersonInJava scalaPersonInJava = new ScalaPersonInJava("Yuhua", "Mai", 28);
         System.out.println(scalaPersonInJava);
+
+
     }
 }
