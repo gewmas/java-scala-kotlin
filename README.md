@@ -1,6 +1,8 @@
+#### Overview
+This project demos that Java, Kotlin and Scala code living in the same package in the same project with maven build file to build them in a sequence that produce different .jar files.
+
 #### Maven pom.xml
 Assume only Java project depends on Kotlin and Scala, thus compile Scala first, then Kotlin, and finally Java.
-
 Hack to put Scala build in generate-resources, Kotlin in process-resources and finally Java in compile.
 
 #### Build sequence
