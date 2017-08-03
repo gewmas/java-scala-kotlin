@@ -1,0 +1,1 @@
+case class ScalaPerson(firstName: String, lastName: String, age: Int)
