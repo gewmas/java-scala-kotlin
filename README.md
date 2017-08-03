@@ -1,12 +1,14 @@
+#### Maven pom.xml
 Assume only Java project depends on Kotlin and Scala, thus compile Scala first, then Kotlin, and finally Java.
 
 Hack to put Scala build in generate-resources, Kotlin in process-resources and finally Java in compile.
 
+#### Build sequence
 1. Building Scala first, can't access Kotlin. But the plugin supports Java.
 2. Kotlin plugin builds after Scala but before Java. The plugin must support Java.
 3. Building Java last. After Scala and Kotlin is built.
 
-Try:
+#### Try command
 ```
 mvn clean install
 java -jar target/java-example-jar-with-dependencies.jar
@@ -14,7 +16,7 @@ java -jar target/kotlin-example-jar-with-dependencies.jar
 java -jar target/scala-example-jar-with-dependencies.jar
 ```
 
-Result:
+#### Result
 ```
 Yuhuas-iMac:java-scala-kotlin yuhuamai$ java -jar target/kotlin-example-jar-with-dependencies.jar
 ============Kotlin============
