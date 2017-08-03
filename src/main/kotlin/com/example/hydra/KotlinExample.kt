@@ -19,10 +19,12 @@ fun demo(source: List<Int>): List<Int> {
 }
 
 fun main(args: Array<String>) {
-    println("Hello World!")
+    println("============Kotlin============")
     println(demo(listOf(1,2,3)))
 
     println(ScalaPerson("Yuhua", "Mai", 28))
     println(KotlinPerson("Yuhua", "Mai", 28))
     println(JavaPerson("Yuhua", 23))
+
+    // Plugin builds after Scala but before Java. The plugin must support Java.
 }
