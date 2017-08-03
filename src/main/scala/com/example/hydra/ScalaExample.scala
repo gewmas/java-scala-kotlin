@@ -7,7 +7,7 @@ object ScalaExample {
     println("Hello Scala!")
 
     println(new JavaPerson("Yuhua", 28))
-//    println(new KotlinPerson("Yuhua", "Mai", 28))
     println(ScalaPerson("Yuhua", "Mai", 28))
+    //    println(new KotlinPerson("Yuhua", "Mai", 28))
   }
 }
